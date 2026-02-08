@@ -14,14 +14,14 @@ A high-performance **React + Vite** network monitoring dashboard. This project p
 ### Static Overviews
 
 <p align="center">
-  <img src="./public/device-dashbooard.png" width="400px" alt="Device Analytics Dashboard" />
+  <img src="./public/device-dashboard.png" width="400px" alt="Device Analytics Dashboard" />
   <img src="./public/map-dashboard.png" width="400px" alt="Network Map Dashboard" />
 </p>
 
 ### Interactive Demos
 
 <p align="center">
-  <img src="./public/cascading.gif" width="400px" alt="Cascading Filter Demo" />
+  <img src="./public/Cascading.gif" width="400px" alt="Cascading Filter Demo" />
   <img src="./public/map.gif" width="400px" alt="Interactive Map Demo" />
 </p>
 
