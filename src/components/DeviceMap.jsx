@@ -10,6 +10,42 @@ import "leaflet.heat";
 import { useEffect } from "react";
 import { SIGNAL_MAP, getSignalCategory } from "../constants/device";
 
+function MapLegend() {
+  const map = useMap();
+
+  useEffect(() => {
+    const legend = L.control({ position: "bottomleft" });
+
+    legend.onAdd = () => {
+      const div = L.DomUtil.create("div", "map-legend");
+      const buckets = [
+        { label: "Good (>-70 dBm)", color: "#10b981" },
+        { label: "Average (>-85 dBm)", color: "#f59e0b" },
+        { label: "Bad (>-100 dBm)", color: "#ef4444" },
+        { label: "No Signal", color: "#6b7280" },
+      ];
+
+      div.innerHTML = `<div class="legend-title">Signal Strength</div>`;
+
+      buckets.forEach((b) => {
+        div.innerHTML += `
+          <div class="legend-item">
+            <div class="legend-color" style="background: ${b.color}"></div>
+            <span>${b.label}</span>
+          </div>
+        `;
+      });
+
+      return div;
+    };
+
+    legend.addTo(map);
+    return () => legend.remove();
+  }, [map]);
+
+  return null;
+}
+
 function HeatmapLayer({ devices }) {
   const map = useMap();
 
@@ -66,6 +102,7 @@ export default function DeviceMap({ devices = [] }) {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         <HeatmapLayer devices={validDevices} />
+        <MapLegend />
 
         {validDevices.map((device) => (
           <CircleMarker

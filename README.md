@@ -1,16 +1,47 @@
-# React + Vite
+🛰️ Device + Map Dashboard
+A high-performance React + Vite network monitoring dashboard designed for real-time device tracking and signal telemetry. This project features a custom Geospatial Map and Analytical Perspectives to visualize device health across the Greater Toronto Area.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+Toronto-Centric Geospatial Mapping: Integrated Leaflet map with custom bounding boxes to ensure all device telemetry stays on-land within Toronto.
 
-Currently, two official plugins are available:
+Signal Heatmap Visualization: Dynamic heatmap gradients that transition through custom signal buckets (Good, Average, Bad, No Signal).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Minimalist Analytical Dashboard: Highcharts integration featuring minimalist "anchor" headers and high-contrast tooltips.
 
-## React Compiler
+Global Filter Context: A centralized filter state that synchronizes the Date Range, Device Manufacturer, and OS Versions across both Map and Chart views.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Responsive Data Table: Real-time filtering of device logs with status indicators and signal strength telemetry.
 
-## Expanding the ESLint configuration
+📸 Project Showroom
+Network Map & Device Telemetry
+Visualize signal dead-zones and device density with our custom heatmap and sapphire-themed markers.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Analytical Insights
+Deep-dive into OS distribution, manufacturer market share, and network load trends.
+
+🛠️ Tech Stack
+Framework: React 18 (Vite)
+
+Mapping: React-Leaflet & Leaflet.heat
+
+Charts: Highcharts & Highcharts React
+
+Styling: Custom CSS3 (Glassmorphism & Sapphire Dark Theme)
+
+State Management: React Context API (FilterProvider)
+
+[Dashboard Demo]
+(./public/devicedashboard.png)
+(./public/MapDashboard.png)
+(./public/Cascading.gif)
+(./public/MapGif.gif)
+
+🏗️ Getting Started
+Clone and Install:
+npm install
+
+Run Development Server:
+npm run dev
+
+Build for Production:
+npm run build
