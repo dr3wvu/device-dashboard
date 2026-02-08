@@ -1,43 +1,42 @@
-🛰️ Device + Map Dashboard
-A high-performance React + Vite network monitoring dashboard designed for real-time device tracking and signal telemetry. This project features a custom Geospatial Map and Analytical Perspectives to visualize device health across the Greater Toronto Area.
+# 🛰️ Sapphire Network Sentinel
 
-🚀 Features
-Toronto-Centric Geospatial Mapping: Integrated Leaflet map with custom bounding boxes to ensure all device telemetry stays on-land within Toronto.
+A high-performance **React + Vite** network monitoring dashboard. This project provides real-time visibility into device health, signal telemetry, and geographic distribution across the Greater Toronto Area.
 
-Signal Heatmap Visualization: Dynamic heatmap gradients that transition through custom signal buckets (Good, Average, Bad, No Signal).
+## 🚀 Key Features
 
-Minimalist Analytical Dashboard: Highcharts integration featuring minimalist "anchor" headers and high-contrast tooltips.
+- **Toronto-Constrained Mapping**: Custom geospatial logic ensures all device markers remain on-land within Toronto city limits.
+- **Signal Heatmap**: Dynamic heat gradients based on signal buckets: Good (>-70 dBm), Average (>-85 dBm), Bad (>-100 dBm), and No Signal.
+- **Sapphire Dark Theme**: A consistent, high-contrast UI featuring glassmorphism popups and minimalist "anchor" chart headers.
+- **Synchronized State**: Centralized `FilterContext` ensures that date ranges and device filters update the map and analytics simultaneously.
 
-Global Filter Context: A centralized filter state that synchronizes the Date Range, Device Manufacturer, and OS Versions across both Map and Chart views.
+## 📸 Project Gallery
 
-Responsive Data Table: Real-time filtering of device logs with status indicators and signal strength telemetry.
+### Static Overviews
 
-📸 Project Showroom
-Network Map & Device Telemetry
-Visualize signal dead-zones and device density with our custom heatmap and sapphire-themed markers.
+<p align="center">
+  <img src="./public/device-dashbooard.png" width="400px" alt="Device Analytics Dashboard" />
+  <img src="./public/map-dashboard.png" width="400px" alt="Network Map Dashboard" />
+</p>
 
-Analytical Insights
-Deep-dive into OS distribution, manufacturer market share, and network load trends.
+### Interactive Demos
 
-🛠️ Tech Stack
-Framework: React 18 (Vite)
+<p align="center">
+  <img src="./public/cascading.gif" width="400px" alt="Cascading Filter Demo" />
+  <img src="./public/map.gif" width="400px" alt="Interactive Map Demo" />
+</p>
 
-Mapping: React-Leaflet & Leaflet.heat
+---
 
-Charts: Highcharts & Highcharts React
+## 🛠️ Tech Stack
 
-Styling: Custom CSS3 (Glassmorphism & Sapphire Dark Theme)
+- **Frontend**: React 18 (Vite)
+- **Mapping**: React-Leaflet & Leaflet.heat
+- **Charts**: Highcharts & Highcharts React
+- **State**: React Context API
+- **Styling**: CSS3 (Sapphire/Graphite Theme)
 
-State Management: React Context API (FilterProvider)
+## 🏗️ Getting Started
 
-[Dashboard Demo]
-(./public/devicedashboard.png)
-(./public/MapDashboard.png)
-(./public/Cascading.gif)
-(./public/MapGif.gif)
-
-🏗️ Getting Started
-Clone and Install:
 npm install
 
 Run Development Server:

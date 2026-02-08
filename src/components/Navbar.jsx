@@ -6,6 +6,7 @@ export default function Navbar({ dashboard, setDashboard }) {
   return (
     <nav className="navbar">
       <div className="nav-left">
+        <h2>OverWatch Dashboard</h2>
         <div className="nav-item-group">
           <span className="nav-label">Profile:</span>
           <select className="dropdown-ghost">
