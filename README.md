@@ -7,7 +7,7 @@ A high-performance **React + Vite** network monitoring dashboard. This project p
 - **Toronto-Constrained Mapping**: Custom geospatial logic ensures all device markers remain on-land within Toronto city limits.
 - **Signal Heatmap**: Dynamic heat gradients based on signal buckets: Good (>-70 dBm), Average (>-85 dBm), Bad (>-100 dBm), and No Signal.
 - **Sapphire Dark Theme**: A consistent, high-contrast UI featuring glassmorphism popups and minimalist "anchor" chart headers.
-- **Synchronized State**: Centralized `FilterContext` ensures that date ranges and device filters update the map and analytics simultaneously.
+- **Synchronized State**: Centralized `FilterContext` for cascading filters ensures that date ranges and device filters update the map and charts simultaneously.
 
 ## 📸 Project Gallery
 
