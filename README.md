@@ -1,4 +1,4 @@
-# 🛰️ Sapphire Network Sentinel
+# 🛰️ OverWatch Dashboard
 
 A high-performance **React + Vite** network monitoring dashboard. This project provides real-time visibility into device health, signal telemetry, and geographic distribution across the Greater Toronto Area.
 
